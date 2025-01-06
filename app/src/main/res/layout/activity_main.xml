@@ -25,7 +25,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        style="?android:attr/buttonBarStyle">
 
         <Button
             android:id="@+id/answer_A"
@@ -34,7 +35,8 @@
             android:layout_margin="5dp"
             android:backgroundTint="@color/white"
             android:text="@string/answer_a"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/answer_B"
@@ -43,7 +45,8 @@
             android:layout_margin="5dp"
             android:backgroundTint="@color/white"
             android:text="@string/answer_b"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/answer_C"
@@ -52,7 +55,8 @@
             android:layout_margin="5dp"
             android:backgroundTint="@color/white"
             android:text="@string/answer_c"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/answer_D"
@@ -61,7 +65,8 @@
             android:layout_margin="5dp"
             android:backgroundTint="@color/white"
             android:text="@string/answer_d"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            style="?android:attr/buttonBarButtonStyle" />
 
     </LinearLayout>
 
@@ -72,6 +77,5 @@
         android:text="@string/submit"
         android:layout_below="@id/choices_layout"
         android:layout_marginTop="20dp"/>
-
 
 </RelativeLayout>
