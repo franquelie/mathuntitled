@@ -2,6 +2,7 @@ package com.example.mathuntitled;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -51,11 +52,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button clickedButton = (Button) view;
         if(clickedButton.getId() == R.id.submit_button) {
-            currentQuestion++;
-            loadQuestion();
             if(selectedAnswer.equals(Questions.correctAnswer[currentQuestion])) {
                 score++;
             }
+
+            currentQuestion++;
+            loadQuestion();
+
 
         } else {
             // choices button clicked
@@ -66,6 +69,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     void loadQuestion() {
+
+        if(currentQuestion == totalQuestions) {
+            finishQuiz();
+            return;
+        }
+
         questionTextView.setText(Questions.question[currentQuestion]);
         ansA.setText(Questions.choices[currentQuestion][0]);
         ansB.setText(Questions.choices[currentQuestion][1]);
@@ -73,4 +82,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ansD.setText(Questions.choices[currentQuestion][3]);
 
     }
+
+    void finishQuiz() {
+        new AlertDialog.Builder(this)
+                .setTitle("Quiz Finished")
+                .setMessage("Your score is " + score + " out of " + totalQuestions)
+                .setPositiveButton("Close", null)
+                .setCancelable(false)
+                .show();
+
+
+    }
+
 }
