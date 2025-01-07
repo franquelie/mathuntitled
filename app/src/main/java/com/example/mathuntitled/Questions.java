@@ -4,7 +4,7 @@ public class Questions {
 
     public static String question[] = {
             "It is a closed plane figure connected by three or more line segments such that each two consecutive segments have a common endpoint.",
-            "A line segment connecting any two non-consecutive vertices of a polygon is known as?",
+            "A line segment connecting any two non-consecutive vertices \n of a polygon is known as?",
             "Which of the following is TRUE about a regular polygon?"
     };
 
