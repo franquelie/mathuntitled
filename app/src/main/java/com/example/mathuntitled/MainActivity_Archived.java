@@ -9,7 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import com.math.untitled.R;
+
+public class MainActivity_Archived extends AppCompatActivity implements View.OnClickListener {
 
     TextView questionTextView;
     Button ansA, ansB, ansC, ansD;
@@ -23,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_old);
 
         questionTextView = findViewById(R.id.question);
         ansA = findViewById(R.id.answer_A);
