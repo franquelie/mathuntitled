@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.math.untitled.R;
 
-public class MainActivity_Archived extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity_Archive extends AppCompatActivity implements View.OnClickListener {
 
     TextView questionTextView;
     Button ansA, ansB, ansC, ansD;
